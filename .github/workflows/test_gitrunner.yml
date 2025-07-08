@@ -1,0 +1,18 @@
+name: gitrunner test
+on:
+  push:
+    branches:
+      - gitactions
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  test_runners:
+    name: hackathon test
+    runs-on: ubantu-latest
+    steps:
+      - name: Say Hello
+        shell: bash
+        run: |
+          echo "Welcome to security Patrol"
+          
